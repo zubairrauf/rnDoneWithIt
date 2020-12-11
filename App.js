@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import WelcomeScreen from './app/Screens/WelcomeScreen'
 import ViewImageScreen from './app/Screens/ViewImageScreen'
+import AppText from './app/components/AppText'
 
 export default function App() {
   return (
