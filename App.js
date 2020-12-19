@@ -9,6 +9,8 @@ import ListingDetailsScreen from "./app/Screens/ListingDetailsScreen";
 import MessagesScreen from "./app/Screens/MessagesScreen";
 import Screen from './app/components/Screen'
 import Icon from './app/components/Icon'
+import ListItem from "./app/components/ListItem";
+import AccountScreen from './app/Screens/AccountScreen'
 
 export default function App() {
   return (
@@ -18,24 +20,11 @@ export default function App() {
       }}
     >
       <Screen>
-        <Icon  
-          name="email"
-          size={50}
-          backgroundColor = 'tomato'
-          iconColor="white"
-        />
+        <AccountScreen />
       </Screen>
     </View>
   );
 }
-
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <WelcomeScreen />
-//     </View>
-//   );
-// }
 
 const styles = StyleSheet.create({
   container: {
