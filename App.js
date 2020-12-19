@@ -7,6 +7,8 @@ import AppText from "./app/components/AppText";
 import Card from "./app/components/Card";
 import ListingDetailsScreen from "./app/Screens/ListingDetailsScreen";
 import MessagesScreen from "./app/Screens/MessagesScreen";
+import Screen from './app/components/Screen'
+import Icon from './app/components/Icon'
 
 export default function App() {
   return (
@@ -15,7 +17,14 @@ export default function App() {
         flex: 1,
       }}
     >
-      <MessagesScreen />
+      <Screen>
+        <Icon  
+          name="email"
+          size={50}
+          backgroundColor = 'tomato'
+          iconColor="white"
+        />
+      </Screen>
     </View>
   );
 }
