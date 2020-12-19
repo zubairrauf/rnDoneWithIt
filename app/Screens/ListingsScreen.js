@@ -9,12 +9,18 @@ import colors from '../config/colors';
 const listings = [
     {
         id: 1,
-        title: 'Red jacket for sale',
-        price: 100,
-        image: require('../assets/jacket.jpg')
+        title: 'Pinup skilt til salgs',
+        price: 300,
+        image: require('../assets/pinup.jpg')
     },
     {
         id: 2,
+        title: 'Rød jakke - Nesten ny',
+        price: 100,
+        image: require('../assets/redjacket2.jpg')
+    },
+    {
+        id: 3,
         title: 'Couch in good condition',
         price: 250,
         image: require('../assets/couch.jpg')
