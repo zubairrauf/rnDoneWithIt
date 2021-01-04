@@ -14,7 +14,9 @@ import AccountScreen from './app/Screens/AccountScreen'
 import ListingsScreen from './app/Screens/ListingsScreen'
 import AppTextInput from './app/components/AppTextInput'
 import AppPicker from './app/components/AppPicker'
+import LoginScreen from './app/Screens/LoginScreen'
 
+//Temporary categories data
 const categories = [
   {label: "Furniture", value: 1},
   {label: "Clothing", value: 2},
@@ -24,19 +26,10 @@ const categories = [
 export default function App() {
   const [ firstName, setFirstName ] = useState('')
   const [ isNew, setIsNew ] = useState('false')
-  const [ category, setCategory ] = useState('')
+  const [ category, setCategory ] = useState()
 
   return (
-    <Screen>
-     <AppPicker 
-        items={categories} 
-        icon='apps' 
-        placeholder={'Category'} 
-        selectedItem={category} 
-        onSelectItem={item => setCategory(item.label)}
-      />
-     <AppTextInput icon='email' placeholder={'email'}/>
-    </Screen>
+    <LoginScreen />
   );
 }
 

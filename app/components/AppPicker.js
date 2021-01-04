@@ -10,14 +10,14 @@ import Screen from './Screen';
 import ListItem from './ListItem';
 import PickerItem from './PickerItem';
 
-function AppPicker({ icon, placeholder, items, selectedItem, onSelectItem, ...otherProps }) {
+function AppPicker({ icon, items, placeholder, selectedItem, onSelectItem }) {
     const [ modalVisible, setModalVisible ] = useState(false)
     return (
         <>
             <TouchableWithoutFeedback onPress={() => setModalVisible(true)}>
                 <View style={styles.inputContainer}>
                     {icon && <MaterialCommunityIcons style={styles.icon} name={icon} size={20} color={colors.medium} />}
-                    <AppText style={styles.text}>{selectedItem ? selectedItem : placeholder}</AppText>
+                    <AppText style={styles.text}>{selectedItem ? selectedItem.label : placeholder}</AppText>
                     {icon && <MaterialCommunityIcons name={'chevron-down'} size={20} color={colors.medium} />}
                 </View>
             </TouchableWithoutFeedback>
